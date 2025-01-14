@@ -1,8 +1,8 @@
 package com.aoding.mall.Controller;
 
-import com.macro.mall.common.api.CommonResult;
-import com.macro.mall.model.CmsPrefrenceArea;
-import com.macro.mall.service.CmsPrefrenceAreaService;
+import com.aoding.mall.common.api.CommonResult;
+import com.aoding.mall.model.CmsPrefrenceArea;
+import com.aoding.mall.Service.CmsPrefrenceAreaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
