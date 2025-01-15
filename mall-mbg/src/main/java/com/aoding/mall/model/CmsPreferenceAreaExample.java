@@ -3,15 +3,15 @@ package com.aoding.mall.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CmsPrefrenceAreaExample {
+public class CmsPreferenceAreaExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
-    protected List<Criteria> oredCriteria;
+    protected List<Criteria> orderCriteria;
 
-    public CmsPrefrenceAreaExample() {
-        oredCriteria = new ArrayList<>();
+    public CmsPreferenceAreaExample() {
+        orderCriteria = new ArrayList<>();
     }
 
     public void setOrderByClause(String orderByClause) {
@@ -30,24 +30,24 @@ public class CmsPrefrenceAreaExample {
         return distinct;
     }
 
-    public List<Criteria> getOredCriteria() {
-        return oredCriteria;
+    public List<Criteria> getOrderCriteria() {
+        return orderCriteria;
     }
 
     public void or(Criteria criteria) {
-        oredCriteria.add(criteria);
+        orderCriteria.add(criteria);
     }
 
     public Criteria or() {
         Criteria criteria = createCriteriaInternal();
-        oredCriteria.add(criteria);
+        orderCriteria.add(criteria);
         return criteria;
     }
 
     public Criteria createCriteria() {
         Criteria criteria = createCriteriaInternal();
-        if (oredCriteria.size() == 0) {
-            oredCriteria.add(criteria);
+        if (orderCriteria.size() == 0) {
+            orderCriteria.add(criteria);
         }
         return criteria;
     }
@@ -58,7 +58,7 @@ public class CmsPrefrenceAreaExample {
     }
 
     public void clear() {
-        oredCriteria.clear();
+        orderCriteria.clear();
         orderByClause = null;
         distinct = false;
     }
